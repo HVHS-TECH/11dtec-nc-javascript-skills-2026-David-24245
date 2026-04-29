@@ -1,8 +1,7 @@
 /****************************
 Name of task: Variables
 ****************************/
-console.log("Running t01_introduction.js")
-console.log("Hello")
+
 
 // Variables
 let Username = "David";
@@ -13,7 +12,7 @@ let pocketMoney = 20;
 /****************************
 Main code
 ****************************/
-console.log(+ Username +" as of "+ Year +" you are" + Age + "You have" + pocketMoney + "dollars")
+console.log(+ "Username" + " as of " + Year +" you are" + Age + "You have" + pocketMoney + "dollars")
 
 
 
