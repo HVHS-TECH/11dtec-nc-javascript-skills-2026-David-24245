@@ -13,7 +13,7 @@ let Money = 20;
 /****************************
 Main code
 ****************************/
-console.log("+ Username +", "+ Year +", "+ Age +", "You have"+ pocketMoney +"dollars")
+console.log("+ Username +", "+ Year +", "+ Age +", "You have" + pocketMoney + "dollars")
 
 
 
