@@ -17,7 +17,7 @@ oldAge = age = + 18;
 Main code
 ****************************/
 console.log("Hi "+ Username +" as of "+ Year +" you are "+ Age +" You have "+ pocketMoney +" dollars")
-
+console.log("You were born in " + birhtYear +)
 
 
 /****************************
