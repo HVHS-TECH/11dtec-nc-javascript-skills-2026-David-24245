@@ -8,6 +8,10 @@ let Username = "David";
 let Year = 2026;
 let Age = 15;
 let pocketMoney = 20;
+let birthYear;
+let oldAge;
+birthYear = year - age;
+oldAge = age = + 18;
 
 /****************************
 Main code
