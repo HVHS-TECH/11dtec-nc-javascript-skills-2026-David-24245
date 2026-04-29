@@ -8,7 +8,7 @@ console.log("Hello")
 let Username = "David";
 let Year = 2026;
 let Age = 15;
-let Money = 20;
+let pocketMoney = 20;
 
 /****************************
 Main code
