@@ -10,8 +10,8 @@ let Age = 15;
 let pocketMoney = 20;
 let birthYear;
 let oldAge;
-birthYear = year - age;
-oldAge = age = + 10;
+birthYear = Year - Age;
+oldAge = Age + 10;
 
 /****************************
 Main code
