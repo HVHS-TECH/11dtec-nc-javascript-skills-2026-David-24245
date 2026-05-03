@@ -2,7 +2,7 @@
 Name of task: JavaScript And HTML
 ****************************/
 
-console.log(Running)
+console.log("Running to5_JavaScript_and")
 
 // Variables
 let Username = "David";
@@ -15,6 +15,8 @@ birthYear = year - age;
 oldAge = age + 10;
 halfMoney = pocketMoney / 2;
 
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+OUTPUT.innerHTML = "<h2>Added by JavaScript";
 /****************************
 Main code
 ****************************/
