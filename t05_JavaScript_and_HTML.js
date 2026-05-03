@@ -2,6 +2,7 @@
 Name of task: JavaScript And HTML
 ****************************/
 
+console.log(Running)
 
 // Variables
 let Username = "David";
