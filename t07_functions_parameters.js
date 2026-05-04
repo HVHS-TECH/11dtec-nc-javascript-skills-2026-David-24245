@@ -21,7 +21,7 @@ OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
 /****************************
 Main code
 ****************************/
-displayWelcome(Username)
+displayProduct("David", 15)
 
 OUTPUT.innerHTML += ("<p>Hi "+ Username +" as of "+ year +" you are "+ age + " years old</p>")
 OUTPUT.innerHTML += ("<p>You were born in " + birthYear + " </p>")
@@ -33,6 +33,7 @@ OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " d
 /****************************
 Functions
 ****************************/
-function displayWelcome(Username) {
-    OUTPUT.innerHTML += "<p> Welcome to the page "+Username+"</p>";
+function displayProduct(_Username, _price) {
+    OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
+    OUTPUT.innerHTML += "<p> You are "+age+" years old</p>";
 }
