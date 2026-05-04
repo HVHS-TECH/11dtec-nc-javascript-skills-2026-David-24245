@@ -21,7 +21,7 @@ OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
 /****************************
 Main code
 ****************************/
-writeline()
+Welcome()
 
 OUTPUT.innerHTML += ("<p>Hi "+ Username +" as of "+ year +" you are "+ age + " years old</p>")
 OUTPUT.innerHTML += ("<p>You were born in " + birthYear + " </p>")
@@ -34,6 +34,6 @@ OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " d
 Functions
 ****************************/
 
-function writeline() {
-OUTPUT.innerHTML += "<p> Welcome </p>";
+function Welcome() {
+OUTPUT.innerHTML += "<p> Welcome to the shop </p>";
 }
