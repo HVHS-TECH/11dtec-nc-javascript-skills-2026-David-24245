@@ -2,7 +2,7 @@
 Name of task: Functions Parameters
 ****************************/
 
-console.log("Running to6_functions_parameters.js")
+console.log("Running to7_functions_parameters.js")
 
 // Variables
 let Username = "David";
