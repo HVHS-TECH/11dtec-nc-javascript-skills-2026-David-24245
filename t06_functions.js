@@ -1,8 +1,8 @@
 /****************************
-Name of task: JavaScript And HTML
+Name of task: Functions
 ****************************/
 
-console.log("Running to5_JavaScript_and_HTML.js")
+console.log("Running to6_functions.js")
 
 // Variables
 let Username = "David";
