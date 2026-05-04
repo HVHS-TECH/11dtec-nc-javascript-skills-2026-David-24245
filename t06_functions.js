@@ -32,3 +32,5 @@ OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " d
 /****************************
 Functions
 ****************************/
+
+function writeline
