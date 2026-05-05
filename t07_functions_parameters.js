@@ -23,13 +23,18 @@ OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
 /****************************
 Main code
 ****************************/
-displayProduct("David", 15)
+displayWelcome("David")
+displayProduct("Chocolate", 4)
+displayProduct("Chips", 3)
+displayProduct("Drink", 2.50)
 
 /****************************
 Functions
 ****************************/
-function displayProduct(Username, price) {
+function displayWelcome(Username) {
     OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
-    OUTPUT.innerHTML += "<p> "+item+" : $  "+price+" </p>";
-    OUTPUT.innerHTML += "<p> "+item+" : $  "+price+" </p>";
+}
+
+function displayProduct(item, price) {
+    OUTPUT.innerHTML += "<p> "+item+": $"+price+" </p>";
 }

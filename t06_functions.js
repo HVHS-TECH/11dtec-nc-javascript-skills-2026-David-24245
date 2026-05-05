@@ -35,5 +35,5 @@ Functions
 ****************************/
 
 function Welcome() {
-OUTPUT.innerHTML += "<p> Welcome to the shop </p>";
+OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
 }
