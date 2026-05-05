@@ -30,5 +30,5 @@ Functions
 ****************************/
 function displayProduct(Username, price) {
     OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
-    OUTPUT.innerHTML += "<p> "+item+" ": "" "+price+" </p>";
+    OUTPUT.innerHTML += "<p> "+item+" ": $ "" "+price+" </p>";
 }
