@@ -8,6 +8,7 @@ console.log("Running to7_functions_parameters.js")
 let Username = "";
 let year = 2026;
 let age = "";
+let item = "";
 let price = "";
 let pocketMoney = 20;
 let birthYear;
@@ -29,5 +30,5 @@ Functions
 ****************************/
 function displayProduct(Username, price) {
     OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
-    OUTPUT.innerHTML += "<p>   "+price+" </p>";
+    OUTPUT.innerHTML += "<p> "+item+" ": "" "+price+" </p>";
 }
