@@ -5,9 +5,9 @@ Name of task: Functions Parameters
 console.log("Running to7_functions_parameters.js")
 
 // Variables
-let Username = "David";
+let Username = "";
 let year = 2026;
-let age = 15;
+let age = "";
 let pocketMoney = 20;
 let birthYear;
 let oldAge;
@@ -26,7 +26,7 @@ displayProduct("David", 15)
 /****************************
 Functions
 ****************************/
-function displayProduct(_Username, _age) {
+function displayProduct(Username, age) {
     OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
     OUTPUT.innerHTML += "<p> You are "+age+" years old</p>";
 }
