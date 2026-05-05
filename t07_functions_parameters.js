@@ -33,7 +33,7 @@ OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " d
 /****************************
 Functions
 ****************************/
-function displayProduct(_Username, _price) {
+function displayProduct(_Username, _age) {
     OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
     OUTPUT.innerHTML += "<p> You are "+age+" years old</p>";
 }
