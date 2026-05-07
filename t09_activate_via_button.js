@@ -38,3 +38,9 @@ function displayWelcome(Username) {
 function displayProduct(item, price) {
     OUTPUT.innerHTML += "<p> "+item+": $"+price+" </p>";
 }
+
+function start() {
+    spaceForJavaScriptOutput.innerHTML
+    spaceForJavaScriptOutput.innerHTML
+    answer = year - age;
+}
