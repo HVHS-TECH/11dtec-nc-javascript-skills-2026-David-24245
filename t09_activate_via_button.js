@@ -1,15 +1,13 @@
 /****************************
-Name of task: Functions Parameters
+Name of task: Activate Via Button
 ****************************/
 
-console.log("Running to7_functions_parameters.js")
+console.log("Running to9_activate_via_button.js")
 
 // Variables
-let Username = "";
+let Username = "David";
 let year = 2026;
-let age = "";
-let item = "";
-let price = "";
+let age = 15;
 let pocketMoney = 20;
 let birthYear;
 let oldAge;
@@ -23,24 +21,27 @@ OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
 /****************************
 Main code
 ****************************/
-displayWelcome("David")
-displayProduct("Chocolate", 4)
-displayProduct("Chips", 3)
-displayProduct("Drink", 2.50)
+Welcome()
+Welcome()
+
+OUTPUT.innerHTML += ("<p>Hi "+ Username +" as of "+ year +" you are "+ age + " years old</p>")
+OUTPUT.innerHTML += ("<p>You were born in " + birthYear + " </p>")
+OUTPUT.innerHTML += ("<p>In 10 years you will be " + oldAge + " years old</p>")
+OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars </p>")
+OUTPUT.innerHTML += ("<p>You spend half of your money now you have " + halfMoney + " dollars</p>")
+OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " dollars</p>")
 
 /****************************
 Functions
 ****************************/
-function displayWelcome(Username) {
-    OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
-}
 
-function displayProduct(item, price) {
-    OUTPUT.innerHTML += "<p> "+item+": $"+price+" </p>";
+function Welcome() {
+OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
 }
 
 function start() {
     spaceForJavaScriptOutput.innerHTML
     spaceForJavaScriptOutput.innerHTML
     answer = year - age;
+    spaceForJavaScriptOutput.innerHTML
 }
