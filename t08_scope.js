@@ -4,11 +4,11 @@ const output = document.getElementById("output");
 
 
 var myVar = 0;
-output.innerHTML = "start: "+myVar+"<br>";
+output.innerHTML = "Start: "+myVar+"<br>";
 
 functionOne();
 function functionOne() {
-  var myVar = 1;
+  myVar = 1;
   output.innerHTML += "functionOne: "+myVar+"<br>";
 }
 
@@ -19,4 +19,5 @@ function functionTwo() {
 }
 
 output.innerHTML += "end: "+myVar+"<br>";
+
 
