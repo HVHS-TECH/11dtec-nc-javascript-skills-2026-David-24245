@@ -49,5 +49,5 @@ OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " d
 <form onsubmit="return false;">
     <label for="formName">Name:</label>
     <input type="text" id="nameField" name="formName">
-    <input type="submit" onClick=getFormInput()></input>
+    <input type="submit" onClick=getFormInput()>
 </form>
