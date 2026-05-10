@@ -1,8 +1,8 @@
 /****************************
-Name of task: Activate Via Button
+Name of task: Input From HTML
 ****************************/
 
-console.log("Running to9_activate_via_button.js")
+console.log("Running t10_input_from_HTML.js")
 
 // Variables
 let Username = "David";
