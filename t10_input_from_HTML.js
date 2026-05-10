@@ -6,7 +6,6 @@ console.log("Running t10_input_from_HTML.js")
 
 // Variables
 let Username = "David";
-let userName = "";
 let year = 2026;
 let age = 15;
 let pocketMoney = 20;
