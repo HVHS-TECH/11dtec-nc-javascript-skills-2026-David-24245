@@ -6,6 +6,7 @@ console.log("Running t10_input_from_HTML.js")
 
 // Variables
 let Username = "David";
+let userName = "";
 let year = 2026;
 let age = 15;
 let pocketMoney = 20;
@@ -17,6 +18,9 @@ halfMoney = pocketMoney / 2;
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
+
+const NAME_FIELD= document.getElementById("nameField");
+let userName = NAME_FIELD.value;
 
 /****************************
 Main code
