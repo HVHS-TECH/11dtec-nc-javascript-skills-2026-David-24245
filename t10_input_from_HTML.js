@@ -45,3 +45,7 @@ OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars </p>")
 OUTPUT.innerHTML += ("<p>You spend half of your money now you have " + halfMoney + " dollars</p>")
 OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " dollars</p>")
 }
+
+<form onsubmit="return false;">
+    <label for="formName">Name:</label>
+</form>
