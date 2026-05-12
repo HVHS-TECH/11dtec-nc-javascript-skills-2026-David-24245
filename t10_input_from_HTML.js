@@ -18,20 +18,21 @@ halfMoney = pocketMoney / 2;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
 
-function getFormInput(){
-const NAME_FIELD= document.getElementById("spaceForJavaScriptOutput");
-let userName = NAME_FIELD.value;
-OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
-}
 /****************************
 Main code
 ****************************/
 Welcome()
 start()
+getFormInput()
 
 /****************************
 Functions
 ****************************/
+function getFormInput(){
+const NAME_FIELD= document.getElementById("spaceForJavaScriptOutput");
+let userName = NAME_FIELD.value;
+OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
+}
 
 function Welcome() {
 OUTPUT.innerHTML += "<p> Welcome to the shop "+Username+"</p>";
