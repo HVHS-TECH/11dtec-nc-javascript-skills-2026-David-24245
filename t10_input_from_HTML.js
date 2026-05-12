@@ -19,7 +19,7 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 OUTPUT.innerHTML = ("<h2>Added by JavaScript</h2>")
 
 function getFormInput(){
-const NAME_FIELD= document.getElementById("nameField");
+const NAME_FIELD= document.getElementById("spaceForJavaScriptOutput");
 let userName = NAME_FIELD.value;
 OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
 }
@@ -53,6 +53,6 @@ OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + " d
 
 <form onsubmit="return false;">
     <label for="formName">Name:</label>
-    <input type="text" id="nameField" name="formName" placeHolder="name">
+    <input type="text" id="spaceForJavaScriptOutput" name="formName" placeHolder="name">
     <input type="submit" onClick=getFormInput()>
 </form>
