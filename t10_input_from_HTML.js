@@ -33,5 +33,5 @@ OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
 <form onsubmit="return false;">
     <label for="formName">Name:</label>
     <input type="text" id="spaceForJavaScriptOutput" name="formName" placeHolder="name">
-    <input type="submit" onClick=getFormInput()>
+    <input type="submit" onClick=getFormInput();>
 </form>
