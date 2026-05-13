@@ -31,7 +31,7 @@ let userName = NAME_FIELD.value;
 OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
 }
 
-<form onsubmit="return false;"
+<form onsubmit="return false;">
     <label for="formName">Name:</label>
     <input type="text" id="spaceForJavaScriptOutput" name="formName" placeHolder="name"></input>
     <input type="submit" onClick="getFormInput"></input>
