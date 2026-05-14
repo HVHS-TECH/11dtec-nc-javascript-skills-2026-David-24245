@@ -24,12 +24,12 @@ Main code
 Functions
 ****************************/
 function getFormInput(){
-    const NAME_FIELD = document.getElementById("nameField");   
+    const MONEY_FIELD = document.getElementById("moneyField");   
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");  
-    let userName = NAME_FIELD.value;
+    let userMoney = MONEY_FIELD.value;
 
     const AGE_FIELD = document.getElementById("ageField");   
     let userAge = AGE_FIELD.value;
 
-    OUTPUT.innerHTML = "<p>You are " + userAge + "years old and you have " + userAge +"</p>";
+    OUTPUT.innerHTML = "<p>You are " + userAge + " years old and you have $" + userMoney +"</p>";
 }
