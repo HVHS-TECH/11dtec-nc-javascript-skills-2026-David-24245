@@ -31,8 +31,8 @@ function getFormInput(){
 }
 
 function getFormInput(){
-    const AGE_FIELD = document.getElementById("nameField");   
+    const AGE_FIELD = document.getElementById("ageField");   
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");  
-    let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML = "<p>Your name is " + userName + "</p>";
+    let userAge = AGE_FIELD.value;
+    OUTPUT.innerHTML = "<p>Your name is " + age + "</p>";
 }
