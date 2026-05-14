@@ -27,12 +27,10 @@ function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");   
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");  
     let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML = "<p>Your name is " + userName + "</p>";
-}
 
-function getFormInput(){
     const AGE_FIELD = document.getElementById("ageField");   
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");  
     let userAge = AGE_FIELD.value;
-    OUTPUT.innerHTML = "<p>Your age is " + age + "</p>";
+
+    OUTPUT.innerHTML = "<p>Nam " + userName + "</p>";
 }
