@@ -40,4 +40,10 @@ function getFormInput(){
 }
 }
 
-function
+function calculatePay(_hours){
+    let pay = _hours * 18.80;
+    pay = pay - (pay *0.105);
+    pay = pay - (pay * 0.04);
+    pay = pay + 10;
+    return pay;
+}
