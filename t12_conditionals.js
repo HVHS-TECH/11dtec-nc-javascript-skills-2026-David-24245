@@ -32,4 +32,10 @@ function getFormInput(){
     let userAge = AGE_FIELD.value;
 
     OUTPUT.innerHTML = "<p>You are " + userAge + " years old and you have $" + userMoney +"</p>";
+
+        if (userMoney < 4){
+    console.log("Sorry you can't afford a chocolate bar")
+} else if (userMoney >= 4){
+    console.log("You can afford a chocolate bar")
+}
 }
