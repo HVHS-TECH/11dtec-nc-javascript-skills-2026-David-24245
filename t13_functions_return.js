@@ -48,8 +48,8 @@ function calculateChange(_money, _price){
     price = price + 10;
     return price;
 
-    let mondayPay = calculateChange(8);
+    let change = calculateChange(8);
 
-    OUTPUT.innerHTML += "This week's pay:<br>";
+    OUTPUT.innerHTML += "Change: $"+change+"<br>";
 }
 }
