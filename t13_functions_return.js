@@ -48,7 +48,7 @@ function calculateChange(_money, _price){
     price = price + 10;
     return price;
 
-    let change = calculateChange(8);
+    let change = calculateChange(11, 5);
 
     OUTPUT.innerHTML += "Change: $"+change+"<br>";
 }
