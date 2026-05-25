@@ -40,19 +40,16 @@ function getFormInput(){
     console.log("You can afford a chocolate bar")
 }
 
-function calculateChange(_money, _price){
-    let pay = _money * 18.80;
-    pay = pay - (pay *0.105);
-    pay = pay - (pay * 0.04);
-    pay = pay + 10;
-    return pay;
 
-    let mondayPay = calculatePay(8);
-    let tuesdayPay = calculatePay(6);
+function calculateChange(_money, _price){
+    let price = _money * 18.80;
+    price = price - (price *0.105);
+    price = price - (price * 0.04);
+    price = price + 10;
+    return price;
+
+    let mondayPay = calculateChange(8);
 
     OUTPUT.innerHTML += "This week's pay:<br>";
-    OUTPUT.innerHTML += "Monday: $"+mondayPay+"<br>";
-    OUTPUT.innerHTML += "Tuesday: $"+tuesdayPay+"<br>";
 }
 }
-
