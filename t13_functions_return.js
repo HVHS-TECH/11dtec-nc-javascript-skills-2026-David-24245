@@ -33,11 +33,11 @@ function getFormInput(){
 
     OUTPUT.innerHTML = "<p>You are " + userAge + " years old and you have $" + userMoney +"</p>";
 
+
         if (userMoney < 4){
     console.log("Sorry you can't afford a chocolate bar")
-} else if (userMoney >= 4){
+        } else if (userMoney >= 4){
     console.log("You can afford a chocolate bar")
-}
 }
 
 function calculateChange(_money, _price){
@@ -54,3 +54,5 @@ function calculateChange(_money, _price){
     OUTPUT.innerHTML += "Monday: $"+mondayPay+"<br>";
     OUTPUT.innerHTML += "Tuesday: $"+tuesdayPay+"<br>";
 }
+}
+
