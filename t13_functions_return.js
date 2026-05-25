@@ -41,7 +41,7 @@ function getFormInput(){
 }
 
 function calculateChange(_money, _price){
-    let pay = _hours * 18.80;
+    let pay = _money * 18.80;
     pay = pay - (pay *0.105);
     pay = pay - (pay * 0.04);
     pay = pay + 10;
