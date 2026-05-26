@@ -2,7 +2,7 @@
 Name of task: Return Values
 ****************************/
 
-console.log("Running t13_return_values.js")
+console.log("Running t13_functions_return.js")
 
 // Variables
 let userName = "David";
@@ -26,17 +26,16 @@ function calculateChange(_money, _price){
 
 function getFormInput(){
     const MONEY_FIELD = document.getElementById("moneyField");
-    const PRICE_FIELD = document.getElementById("priceField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
     let userMoney = parseFloat(MONEY_FIELD.value);
-    let userPrice = parseFloat(PRICE_FIELD.value);
+    let chocolatePrice = 4;
 
-    if (userMoney < userPrice){
+    if (userMoney < chocolatePrice){
         console.log("Sorry you can't afford a chocolate bar");
         OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
     } else {
-        let change = calculateChange(userMoney, userPrice);
+        let change = calculateChange(userMoney, chocolatePrice);
         console.log("You can afford a chocolate bar");
         OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
         OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
