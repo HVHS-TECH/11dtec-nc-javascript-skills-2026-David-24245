@@ -50,6 +50,6 @@ function calculateChange(_money, _price){
 
     let change = calculateChange(11, 5);
 
-    OUTPUT.innerHTML += "Change: $"+change+"<br>";
+    OUTPUT.innerHTML += "You will get $"+change+ " change<br>";
 }
 }
