@@ -28,7 +28,7 @@ function getFormInput(){
     const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    let userMoney = parseFloat(MONEY_FIELD.value);
+    let userMoney = MONEY_FIELD.value;
     let chocolatePrice = 4;
 
     if (userMoney < chocolatePrice){
