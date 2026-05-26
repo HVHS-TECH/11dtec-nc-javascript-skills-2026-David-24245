@@ -1,8 +1,8 @@
 /****************************
-Name of task: Functions Return
+Name of task: Return Values
 ****************************/
 
-console.log("Running t13_functions_return.js")
+console.log("Running t13_return_values.js")
 
 // Variables
 let userName = "David";
@@ -17,39 +17,28 @@ oldAge = age + 10;
 halfMoney = pocketMoney / 2;
 
 /****************************
-Main code
-****************************/
-
-/****************************
 Functions
 ****************************/
-function getFormInput(){
-    const MONEY_FIELD = document.getElementById("moneyField");   
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");  
-    let userMoney = MONEY_FIELD.value;
-
-    const AGE_FIELD = document.getElementById("ageField");   
-    let userAge = AGE_FIELD.value;
-
-    OUTPUT.innerHTML = "<p>You are " + userAge + " years old and you have $" + userMoney +"</p>";
-
-
-        if (userMoney < 4){
-    console.log("Sorry you can't afford a chocolate bar")
-        } else if (userMoney >= 4){
-    console.log("You can afford a chocolate bar")
-}
-
-
 function calculateChange(_money, _price){
-    let price = _money * 18.80;
-    price = price - (price *0.105);
-    price = price - (price * 0.04);
-    price = price + 10;
-    return price;
-
-    let change = calculateChange(11, 5);
-
-    OUTPUT.innerHTML += "You will get $"+change+ " change<br>";
+    let change = _money - _price;
+    return change;
 }
+
+function getFormInput(){
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const PRICE_FIELD = document.getElementById("priceField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    let userMoney = parseFloat(MONEY_FIELD.value);
+    let userPrice = parseFloat(PRICE_FIELD.value);
+
+    if (userMoney < userPrice){
+        console.log("Sorry you can't afford a chocolate bar");
+        OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
+    } else {
+        let change = calculateChange(userMoney, userPrice);
+        console.log("You can afford a chocolate bar");
+        OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
+        OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
+    }
 }

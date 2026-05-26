@@ -1,44 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+/****************************
+Name of task: Return Values
+****************************/
 
-<head>
-  <title>T12-conditionals</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+console.log("Running t13_return_values.js")
 
-  <!-- stylesheets *******************************************-->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
-</head>
+// Variables
+let userName = "David";
+let year = 2026;
+let age = 15;
+let pocketMoney = 20;
+let birthYear;
+let oldAge;
+let halfMoney;        
+birthYear = year - age;
+oldAge = age + 10;
+halfMoney = pocketMoney / 2;
 
-<!--*************************************************************
-  BODY
-**************************************************************-->
+/****************************
+Functions
+****************************/
+function calculateChange(_money, _price){
+    let change = _money - _price;
+    return change;
+}
 
-<body>
-  <h1>T12-conditionals</h1>
-  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+function getFormInput(){
+    const MONEY_FIELD = document.getElementById("moneyField");
+    const PRICE_FIELD = document.getElementById("priceField");
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+    let userMoney = parseFloat(MONEY_FIELD.value);
+    let userPrice = parseFloat(PRICE_FIELD.value);
 
-  <div id="spaceForJavaScriptOutput"></div>
-
-  <form onsubmit="return false;">
-
-    <label for="formAge">Age:</label>
-    <input type="text" id="ageField" name="formAge" placeholder="age"> 
-
-    <label for="formAge">Pocket Money:</label>
-    <input type="text" id="moneyField" name="formMoney" placeholder="$$$"> 
-
-    <input type="submit" onClick="getFormInput()">  
-</form>
-
-  <script src="../t12_conditionals.js"></script>
-
-</body>
-
-</html>
-<!--*************************************************************
-  END OF T12_CONDITIONALS.HTML
-**************************************************************-->
+    if (userMoney < userPrice){
+        console.log("Sorry you can't afford a chocolate bar");
+        OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
+    } else {
+        let change = calculateChange(userMoney, userPrice);
+        console.log("You can afford a chocolate bar");
+        OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
+        OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
+    }
+}
