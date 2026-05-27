@@ -38,3 +38,18 @@ function getFormInput(){
         OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
     }
 }
+
+function getFormInput(){
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+    let userMoney = document.getElementById("moneyField").value;
+
+    if (userMoney < 4){
+        console.log("Sorry you can't afford a chocolate bar");
+        OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
+    } else {
+        let change = calculateChange(userMoney, 4);
+        console.log("You can afford a chocolate bar");
+        OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
+        OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
+    }
+}
