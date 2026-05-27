@@ -45,7 +45,7 @@ function getFormInput(){
     let choice = CHOOSE_FIELD.value;
 
     if (choice = 0){
-        console.log("Sorry you can't afford a chocolate bar");
+        console.log("+classArray+");
         OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
     } else {
         let change = calculateChange(userMoney, 4);
