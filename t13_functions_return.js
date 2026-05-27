@@ -25,17 +25,15 @@ function calculateChange(_money, _price){
 }
 
 function getFormInput(){
-    const MONEY_FIELD = document.getElementById("moneyField");
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-    let userMoney = MONEY_FIELD.value;
-    let chocolatePrice = 4;
+    let userMoney = document.getElementById("moneyField").value;
 
-    if (userMoney < chocolatePrice){
+    if (userMoney < 4){
         console.log("Sorry you can't afford a chocolate bar");
         OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
     } else {
-        let change = calculateChange(userMoney, chocolatePrice);
+        let change = calculateChange(userMoney, 4);
         console.log("You can afford a chocolate bar");
         OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
         OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
