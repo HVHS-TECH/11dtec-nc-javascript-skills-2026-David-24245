@@ -44,7 +44,7 @@ function getFormInput(){
     let classArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing ever"];
     let choice = CHOOSE_FIELD.value;
 
-    if (userMoney < 4){
+    if (choice = 0){
         console.log("Sorry you can't afford a chocolate bar");
         OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
     } else {
