@@ -41,7 +41,8 @@ function getFormInput(){
 
 function getFormInput(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    let userMoney = document.getElementById("moneyField").value;
+    let classArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing ever"];
+    let choice = CHOOSE_FIELD.value;
 
     if (userMoney < 4){
         console.log("Sorry you can't afford a chocolate bar");
