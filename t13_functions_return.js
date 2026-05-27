@@ -1,5 +1,5 @@
 /****************************
-Name of task: Return Values
+Name of task: Functions Return
 ****************************/
 
 console.log("Running t13_functions_return.js")
