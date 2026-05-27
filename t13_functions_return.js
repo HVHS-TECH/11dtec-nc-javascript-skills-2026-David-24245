@@ -26,7 +26,6 @@ function calculateChange(_money, _price){
 
 function getFormInput(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
     let userMoney = document.getElementById("moneyField").value;
 
     if (userMoney < 4){
