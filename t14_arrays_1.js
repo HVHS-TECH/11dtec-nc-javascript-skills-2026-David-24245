@@ -1,5 +1,5 @@
 /****************************
-Name of task: Arrays Part 1
+Name of task: Arrays
 ****************************/
 
 console.log("Running t14_arrays.js")
