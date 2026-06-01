@@ -1,44 +1,41 @@
-/****************************
-Name of task: Return Values
-****************************/
+<!DOCTYPE html>
+<html lang="en">
 
-console.log("Running t13_return_values.js")
+<head>
+  <title>T13-functions return</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-// Variables
-let userName = "David";
-let year = 2026;
-let age = 15;
-let pocketMoney = 20;
-let birthYear;
-let oldAge;
-let halfMoney;        
-birthYear = year - age;
-oldAge = age + 10;
-halfMoney = pocketMoney / 2;
+  <!-- stylesheets *******************************************-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
+</head>
 
-/****************************
-Functions
-****************************/
-function calculateChange(_money, _price){
-    let change = _money - _price;
-    return change;
-}
+<!--*************************************************************
+  BODY
+**************************************************************-->
 
-function getFormInput(){
-    const MONEY_FIELD = document.getElementById("moneyField");
-    const PRICE_FIELD = document.getElementById("priceField");
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+<body>
+  <h1>T13-functions with return values</h1>
+  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
-    let userMoney = parseFloat(MONEY_FIELD.value);
-    let userPrice = parseFloat(PRICE_FIELD.value);
+  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
-    if (userMoney < userPrice){
-        console.log("Sorry you can't afford a chocolate bar");
-        OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
-    } else {
-        let change = calculateChange(userMoney, userPrice);
-        console.log("You can afford a chocolate bar");
-        OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
-        OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
-    }
-}
+  <div id="spaceForJavaScriptOutput"></div>
+
+  <form onsubmit="return false;">
+
+    <label for="formMoney">Pocket Money:</label>
+    <input type="text" id="moneyField" name="formMoney" placeholder="$$$"> 
+
+    <input type="submit" onClick="getFormInput()">  
+  </form>
+
+  <script src="../t13_functions_return.js"></script>
+
+</body>
+
+</html>
+<!--*************************************************************
+  END OF T13_FUNCTIONS_RETURN.HTML
+**************************************************************-->
