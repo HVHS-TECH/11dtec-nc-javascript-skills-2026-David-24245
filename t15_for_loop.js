@@ -18,5 +18,4 @@ function getFormInput() {
     }
 
     OUTPUT.innerHTML = lyrics;
-    console.log("Loop stopped");
 }
