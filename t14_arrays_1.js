@@ -1,8 +1,8 @@
 /****************************
-Name of task: Arrays
+Name of task: Arrays Part 1
 ****************************/
 
-console.log("Running t14_arrays_1.js")
+console.log("Running t14_arrays.js")
 
 // Variables
 let userName = "David";
@@ -17,6 +17,11 @@ oldAge = age + 10;
 halfMoney = pocketMoney / 2;
 
 /****************************
+Arrays
+****************************/
+let chocolateMessages = ["You loathe chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+
+/****************************
 Functions
 ****************************/
 function calculateChange(_money, _price){
@@ -26,31 +31,12 @@ function calculateChange(_money, _price){
 
 function getFormInput(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    let userMoney = document.getElementById("moneyField").value;
+    let choice = document.getElementById("chocolateField").value;
 
-    if (userMoney < 4){
-        console.log("Sorry you can't afford a chocolate bar");
-        OUTPUT.innerHTML = "<p>Sorry, you can't afford a chocolate bar.</p>";
+    if (choice < 0 || choice > 3 || choice === "") {
+        OUTPUT.innerHTML = "<p>Please enter a number between 0 and 3.</p>";
     } else {
-        let change = calculateChange(userMoney, 4);
-        console.log("You can afford a chocolate bar");
-        OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
-        OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
-    }
-}
-
-function getFormInput(){
-    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-    let classArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing ever"];
-    let choice = CHOOSE_FIELD.value;
-
-    if (choice = 0){
-        console.log("You choose: "+classArray[choice]+"<br>");
-        OUTPUT.innerHTML = "You choose: "+classArray[choice]+"<br>";
-    } else {
-        let change = calculateChange(userMoney, 4);
-        console.log("You can afford a chocolate bar");
-        OUTPUT.innerHTML = "<p>You can afford a chocolate bar!</p>";
-        OUTPUT.innerHTML += "<p>You will get $" + change + " change.</p>";
+        console.log("User chose index: " + choice);
+        OUTPUT.innerHTML = "<p>" + chocolateMessages[choice] + "</p>";
     }
 }
