@@ -2,7 +2,7 @@
 Name of task: Arrays 2
 ****************************/
 
-console.log("Running t16_arrays_2.js")
+console.log("Running t16_arrays_continued.js")
 
 let shoppingList = [];
 
