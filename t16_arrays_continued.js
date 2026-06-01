@@ -4,7 +4,6 @@ Name of task: Arrays 2
 
 console.log("Running t16_arrays_2.js")
 
-// Variables
 let shoppingList = [];
 
 /****************************
@@ -27,7 +26,7 @@ function displayList() {
     OUTPUT.innerHTML = "<p>These are the items on your shopping list:</p>";
 
     for (let i = 0; i < shoppingList.length; i++) {
-        OUTPUT.innerHTML += "Person " + i + ": " + shoppingList[i] + "<br>";
+        OUTPUT.innerHTML += shoppingList[i] + "<br>";
     }
 
     console.log("List displayed. Items: " + shoppingList.length);
