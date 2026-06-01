@@ -8,7 +8,15 @@ function getFormInput() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     let startNumber = parseInt(document.getElementById("versesField").value);
 
-    if (isNaN(startNumber) || startNumber < 1 || startNumber > 99) {
+    if (isNaN(startNumber)) {
+        OUTPUT.innerHTML = "<p>Please enter a number between 1 and 99.</p>";
+        return;
+    }
+    if (startNumber < 1) {
+        OUTPUT.innerHTML = "<p>Please enter a number between 1 and 99.</p>";
+        return;
+    }
+    if (startNumber > 99) {
         OUTPUT.innerHTML = "<p>Please enter a number between 1 and 99.</p>";
         return;
     }
