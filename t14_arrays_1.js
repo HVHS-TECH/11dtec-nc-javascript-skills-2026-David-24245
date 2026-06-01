@@ -33,7 +33,11 @@ function getFormInput(){
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     let choice = document.getElementById("chocolateField").value;
 
-    if (choice < 0 || choice > 3 || choice === "") {
+    if (choice < 0) {
+        OUTPUT.innerHTML = "<p>Please enter a number between 0 and 3.</p>";
+    } else if (choice > 3) {
+        OUTPUT.innerHTML = "<p>Please enter a number between 0 and 3.</p>";
+    } else if (choice === "") {
         OUTPUT.innerHTML = "<p>Please enter a number between 0 and 3.</p>";
     } else {
         console.log("User chose index: " + choice);
