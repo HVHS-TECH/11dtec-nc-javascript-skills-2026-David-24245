@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>T16-arrays continued</title>
+  <title>T16-arrays-2</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,23 +16,25 @@
 **************************************************************-->
 
 <body>
-  <h1>T16-arrays continued</h1>
+  <h1>T16-arrays-2</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+  <div id="spaceForJavaScriptOutput"></div>
 
-  <div id="spaceForJavaScriptOutput">
+  <form onsubmit="return false;">
+    <label for="itemField">Enter a shopping list item:</label>
+    <input type="text" id="itemField" placeholder="e.g. Milk">
+    <input type="submit" value="Add Item" onClick="addItem()">
+  </form>
 
-    The output of your script will go here.
+  <form onsubmit="return false;">
+    <input type="submit" value="Display Shopping List" onClick="displayList()">
+  </form>
 
-  </div>
-
-
-  <script src="../t16_arrays_continued.js"></script>
-
+  <script src="../t16_arrays_2.js"></script>
 </body>
 
 </html>
 <!--*************************************************************
-  END OF T16_ARRAYS_CONTINUED.HTML
+  END OF T16_ARRAYS_2.HTML
 **************************************************************-->
