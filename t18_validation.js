@@ -28,7 +28,10 @@ function addItem() {
     OUTPUT.innerHTML = "<p>You have added " + item + " to the list.</p>";
     document.getElementById("itemField").value = "";
 
-    const
+    const SHOPPING_LIST = document.getElementById("shoppingList");
+    if (SHOPPING_LIST.checkValidity() === false) {
+    OUTPUT.innerHTML = "Please fill out all fields correctly.<br>";
+    }
 }
 
 function displayList() {
