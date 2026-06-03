@@ -26,13 +26,9 @@ function addItem() {
     shoppingList.push(item);
     console.log("Added: " + item);
     OUTPUT.innerHTML = "<p>You have added " + item + " to the list.</p>";
-    document.getElementById("itemField").value = "";
-
-    const SHOPPING_LIST = document.getElementById("shoppingList");
-    if (SHOPPING_LIST.checkValidity() === false) {
-    OUTPUT.innerHTML = "Please fill out all fields correctly.<br>";
+    document.getElementById("itemField").value = "";  
     }
-}
+
 
 function displayList() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
