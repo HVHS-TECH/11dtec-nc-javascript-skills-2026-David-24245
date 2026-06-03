@@ -27,6 +27,8 @@ function addItem() {
     console.log("Added: " + item);
     OUTPUT.innerHTML = "<p>You have added " + item + " to the list.</p>";
     document.getElementById("itemField").value = "";
+
+    const
 }
 
 function displayList() {
