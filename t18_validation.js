@@ -20,6 +20,11 @@ let shoppingList = [];
 /****************************
 Functions
 ****************************/
+    const SHOPPING_LIST = document.getElementById("shoppingList");
+    if (SHOPPING_LIST.checkValidity() === false) {
+        OUTPUT.innerHTML = "Please fill out all fields correctly.<br>";
+    } else {
+
 function addItem() {
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
     let item = document.getElementById("itemField").value;
@@ -37,4 +42,5 @@ function displayList() {
     OUTPUT.innerHTML += shoppingList[i] + "<br>";
     }
     console.log("List displayed Items: " + shoppingList.length);
+}
 }
