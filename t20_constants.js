@@ -4,14 +4,15 @@ Name of task: Constants
 
 console.log("Running t20_constants.js")
 
-const USER_NAME = "David";
-const YEAR = 2026;
-const AGE = 15;
-const POCKET_MONEY = 20;
-const BIRTH_YEAR = YEAR - AGE;
-const OLD_AGE = AGE + 10;
-const HALF_MONEY = POCKET_MONEY / 2;
-const MIN_NAME_LENGTH = 3;
+// Constants
+const userName = "David";
+const year = 2026;
+const age = 15;
+const pocketMoney = 20;
+const birthYear = year - age;
+const oldAge = age + 10;
+const halfMoney = pocketMoney / 2;
+const minNameLength = 3;
 
 // Variables
 let shoppingList = [];
@@ -45,11 +46,11 @@ function checkName() {
 
     name = name.trim();
 
-    if (name.length >= MIN_NAME_LENGTH) {
+    if (name.length >= minNameLength) {
         OUTPUT.innerHTML = "<p>Thanks, " + name + "! That's a valid name.</p>";
         console.log("Valid name entered: " + name);
     } else {
-        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + MIN_NAME_LENGTH + " letters long.</p>";
+        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + minNameLength + " letters long.</p>";
         console.log("Invalid name entered: " + name);
     }
 

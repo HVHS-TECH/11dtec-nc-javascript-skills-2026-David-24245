@@ -5,14 +5,14 @@ Name of task: Objects
 console.log("Running t21_objects.js")
 
 // Constants
-const USER_NAME = "David";
-const YEAR = 2026;
-const AGE = 15;
-const POCKET_MONEY = 20;
-const BIRTH_YEAR = YEAR - AGE;
-const OLD_AGE = AGE + 10;
-const HALF_MONEY = POCKET_MONEY / 2;
-const MIN_NAME_LENGTH = 3;
+const userName = "David";
+const year = 2026;
+const age = 15;
+const pocketMoney = 20;
+const birthYear = year - age;
+const oldAge = age + 10;
+const halfMoney = pocketMoney / 2;
+const minNameLength = 3;
 
 // Variables
 let shoppingList = [];
@@ -47,11 +47,11 @@ function checkName() {
 
     name = name.trim();
 
-    if (name.length >= MIN_NAME_LENGTH) {
+    if (name.length >= minNameLength) {
         OUTPUT.innerHTML = "<p>Thanks, " + name + "! That's a valid name.</p>";
         console.log("Valid name entered: " + name);
     } else {
-        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + MIN_NAME_LENGTH + " letters long.</p>";
+        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + minNameLength + " letters long.</p>";
         console.log("Invalid name entered: " + name);
     }
 
@@ -65,20 +65,20 @@ function addUser() {
     let name = document.getElementById("userNameField").value;
     name = name.trim();
 
-    const age = document.getElementById("userAgeField").value;
-    const pocketMoney = document.getElementById("userPocketMoneyField").value;
+    const userAge = document.getElementById("userAgeField").value;
+    const userPocketMoney = document.getElementById("userPocketMoneyField").value;
     const chocolatePreference = document.getElementById("chocolateField").value;
 
-    if (name.length < MIN_NAME_LENGTH) {
-        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + MIN_NAME_LENGTH + " letters long.</p>";
+    if (name.length < minNameLength) {
+        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + minNameLength + " letters long.</p>";
         console.log("Invalid name entered: " + name);
         return;
     }
 
     const newUser = {
         name: name,
-        age: age,
-        pocketMoney: pocketMoney,
+        age: userAge,
+        pocketMoney: userPocketMoney,
         chocolatePreference: chocolatePreference
     };
 
