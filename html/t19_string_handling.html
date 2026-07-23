@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- stylesheets *******************************************-->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
 </head>
@@ -18,8 +17,6 @@
 <body>
   <h1>T19-string handling</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
-
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
   <div id="spaceForJavaScriptOutput">
 
@@ -33,7 +30,11 @@
     <input type="submit" value="Display Shopping List" onClick="displayList()">
   </form>
 
-    The output of your script will go here.
+  <form onsubmit="return false;">
+    <label for="nameField">Enter your name:</label>
+    <input type="text" id="nameField" placeholder="e.g. David" required>
+    <input type="submit" value="Check Name" onClick="checkName()">
+  </form>
 
   </div>
 
