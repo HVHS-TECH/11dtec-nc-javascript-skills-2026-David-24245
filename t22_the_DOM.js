@@ -1,8 +1,8 @@
 /****************************
-Name of task: HTML and the DOM
+Name of task: The DOM
 ****************************/
 
-console.log("Running t22_html_and_the_dom.js")
+console.log("Running t22_the_DOM.js")
 
 // Constants
 const userName = "David";
