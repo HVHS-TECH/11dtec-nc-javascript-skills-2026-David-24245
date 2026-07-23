@@ -1,8 +1,8 @@
 /****************************
-Name of task: Constants and Conventions
+Name of task: Constants
 ****************************/
 
-console.log("Running t20_constants_and_conventions.js")
+console.log("Running t20_constants.js")
 
 const USER_NAME = "David";
 const YEAR = 2026;

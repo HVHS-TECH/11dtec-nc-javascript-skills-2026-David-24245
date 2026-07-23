@@ -23,7 +23,21 @@
 
   <div id="spaceForJavaScriptOutput">
 
-    The output of your script will go here.
+      <form onsubmit="return false;">
+    <label for="itemField">Enter a shopping list item:</label>
+    <input type="text" id="itemField" placeholder="e.g. Milk" required>
+    <input type="submit" value="Add Item" onClick="addItem()">
+  </form>
+ 
+  <form onsubmit="return false;">
+    <input type="submit" value="Display Shopping List" onClick="displayList()">
+  </form>
+ 
+  <form onsubmit="return false;">
+    <label for="nameField">Enter your name:</label>
+    <input type="text" id="nameField" placeholder="e.g. David" required>
+    <input type="submit" value="Check Name" onClick="checkName()">
+  </form>
 
   </div>
 
