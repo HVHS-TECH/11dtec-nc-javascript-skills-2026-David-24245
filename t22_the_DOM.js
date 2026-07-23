@@ -1,18 +1,18 @@
 /****************************
-Name of task: Objects
+Name of task: HTML and the DOM
 ****************************/
 
-console.log("Running t21_objects.js")
+console.log("Running t22_html_and_the_dom.js")
 
 // Constants
-const USER_NAME = "David";
-const YEAR = 2026;
-const AGE = 15;
-const POCKET_MONEY = 20;
-const BIRTH_YEAR = YEAR - AGE;
-const OLD_AGE = AGE + 10;
-const HALF_MONEY = POCKET_MONEY / 2;
-const MIN_NAME_LENGTH = 3;
+const userName = "David";
+const year = 2026;
+const age = 15;
+const pocketMoney = 20;
+const birthYear = year - age;
+const oldAge = age + 10;
+const halfMoney = pocketMoney / 2;
+const minNameLength = 3;
 
 // Variables
 let shoppingList = [];
@@ -47,11 +47,11 @@ function checkName() {
 
     name = name.trim();
 
-    if (name.length >= MIN_NAME_LENGTH) {
+    if (name.length >= minNameLength) {
         OUTPUT.innerHTML = "<p>Thanks, " + name + "! That's a valid name.</p>";
         console.log("Valid name entered: " + name);
     } else {
-        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + MIN_NAME_LENGTH + " letters long.</p>";
+        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + minNameLength + " letters long.</p>";
         console.log("Invalid name entered: " + name);
     }
 
@@ -65,20 +65,20 @@ function addUser() {
     let name = document.getElementById("userNameField").value;
     name = name.trim();
 
-    const age = document.getElementById("userAgeField").value;
-    const pocketMoney = document.getElementById("userPocketMoneyField").value;
+    const userAge = document.getElementById("userAgeField").value;
+    const userPocketMoney = document.getElementById("userPocketMoneyField").value;
     const chocolatePreference = document.getElementById("chocolateField").value;
 
-    if (name.length < MIN_NAME_LENGTH) {
-        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + MIN_NAME_LENGTH + " letters long.</p>";
+    if (name.length < minNameLength) {
+        OUTPUT.innerHTML = "<p>Please enter a name that is at least " + minNameLength + " letters long.</p>";
         console.log("Invalid name entered: " + name);
         return;
     }
 
     const newUser = {
         name: name,
-        age: age,
-        pocketMoney: pocketMoney,
+        age: userAge,
+        pocketMoney: userPocketMoney,
         chocolatePreference: chocolatePreference
     };
 
@@ -103,4 +103,19 @@ function displayWelcome() {
             thisUser.chocolatePreference + " chocolate.<br>";
         console.log("User " + i + " is " + thisUser.name + " and is " + thisUser.age);
     }
+}
+
+
+function clearFields() {
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
+    document.getElementById("itemField").value = "";
+    document.getElementById("nameField").value = "";
+    document.getElementById("userNameField").value = "";
+    document.getElementById("userAgeField").value = "";
+    document.getElementById("userPocketMoneyField").value = "";
+    document.getElementById("chocolateField").value = "Milk";
+
+    OUTPUT.innerHTML = "<p>All fields have been cleared.</p>";
+    console.log("All fields cleared");
 }
